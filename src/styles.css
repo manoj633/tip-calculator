@@ -1,0 +1,7 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(240, 244, 247);
+    background: linear-gradient(-70deg, #202020, #000000);
+    font-family: 'Space Mono', monospace;
+}

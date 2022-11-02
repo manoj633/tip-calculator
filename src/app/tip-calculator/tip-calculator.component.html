@@ -1,46 +1,59 @@
-<div class="row">
-  <div class="col-xs-12">
-    <form>
-      <div class="row">
-        <div class="col-sm-5 form-group">
-          <label>Bill: </label>
-          <input
-            type="number"
-            class="bill"
-            name="bill"
-            min="0"
-            [(ngModel)]="bill"
-            (ngModelChange)="onChange('bill')"
-            required
-          />
+<div class="view-port">
+  <div class="circles">
+    <div class="circle circle-1"></div>
+    <div class="circle circle-3"></div>
+  </div>
+  <div class="card">
+    <div class="title"><span>Tip calculator</span></div>
+    <div class="form-container">
+      <form>
+        <div class="inputs-container">
+          <div class="bill-container">
+            <label>Bill $: </label>
+            <input
+              type="number"
+              class="bill"
+              id="bill"
+              name="bill"
+              min="0"
+              [(ngModel)]="bill"
+              (ngModelChange)="onChange('bill')"
+              required
+            />
+            <span class="underline"></span>
+          </div>
+          <div class="tip-container">
+            <label>Tip %: </label>
+            <input
+              type="number"
+              class="bill"
+              name="tip"
+              id="tip"
+              min="0"
+              [(ngModel)]="tip"
+              (ngModelChange)="onChange('tip')"
+            />
+            <span class="underline"></span>
+          </div>
+          <div class="person-container">
+            <label>Person: </label>
+            <input
+              type="number"
+              class="bill"
+              name="peopleCount"
+              min="1"
+              id="person"
+              [(ngModel)]="peopleCount"
+              (ngModelChange)="onChange('people')"
+            />
+            <span class="underline"></span>
+          </div>
         </div>
-        <div class="col-sm-5 form-group">
-          <label>Tip %: </label>
-          <input
-            type="number"
-            class="bill"
-            name="tip"
-            min="0"
-            [(ngModel)]="tip"
-            (ngModelChange)="onChange('tip')"
-          />
+        <div class="outputs-container">
+          <div class="tips">Tips: {{ tipTotal | currency }}</div>
+          <div class="total">total: {{ totalValue | currency }}</div>
         </div>
-        <div class="col-sm-5 form-group">
-          <label>Bill: </label>
-          <input
-            type="number"
-            class="bill"
-            name="peopleCount"
-            min="1"
-            [(ngModel)]="peopleCount"
-            (ngModelChange)="onChange('people')"
-          />
-        </div>
-      </div>
-      <div>
-        <div>Tips: {{ tipTotal }}</div>
-        <div>total: {{ totalValue }}</div>
-      </div>
-    </form>
+      </form>
+    </div>
   </div>
 </div>
