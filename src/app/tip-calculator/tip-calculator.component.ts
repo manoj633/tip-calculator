@@ -11,6 +11,7 @@ export class TipCalculatorComponent {
   peopleCount: number = 1;
   tipTotal: number = 0.00;
   totalValue: number = 0.00;
+  showtext: boolean = false;
   constructor() { }
 
   onChange(type: string) {
@@ -25,6 +26,7 @@ export class TipCalculatorComponent {
         } else {
           this.tipTotal = (this.bill * (this.tip / 100)) / this.peopleCount;
           this.totalValue = (this.bill + this.tipTotal) / this.peopleCount;
+          this.showtext = true;
         }
       }
     }

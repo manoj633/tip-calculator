@@ -49,13 +49,12 @@
     -webkit-animation-delay: 3.5s;
     animation-delay: 3.5s;
     animation-direction: alternate;
-
 }
 
-.circle-3 {
+.circle-2 {
     height: 300px;
     width: 300px;
-    bottom: 150px;
+    bottom: 220px;
     right: -600px;
     opacity: 0.8;
     animation-timing-function: cubic-bezier(0.54, 0.085, 0.5, 0.92);
@@ -169,6 +168,7 @@ label {
 .total {
     display: flex;
     font-size: 25px;
+    flex-direction: column;
 }
 
 input {
@@ -240,4 +240,12 @@ input:hover {
 .tip-container>input[id="tip"]:focus+.underline,
 .person-container>input[id="person"]:focus+.underline {
     left: 0;
+}
+
+.per-person-visible {
+    font-size: 15px;
+}
+
+.per-person-hide {
+    display: none;
 }

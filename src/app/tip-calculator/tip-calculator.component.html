@@ -1,7 +1,7 @@
 <div class="view-port">
   <div class="circles">
     <div class="circle circle-1"></div>
-    <div class="circle circle-3"></div>
+    <div class="circle circle-2"></div>
   </div>
   <div class="card">
     <div class="title"><span>Tip calculator</span></div>
@@ -50,8 +50,20 @@
           </div>
         </div>
         <div class="outputs-container">
-          <div class="tips">Tips: {{ tipTotal | currency }}</div>
-          <div class="total">total: {{ totalValue | currency }}</div>
+          <div class="tips">
+            <span>Tips: {{ tipTotal | currency }}</span
+            ><span
+              [ngClass]="showtext ? 'per-person-visible' : 'per-person-hide'"
+              >per person</span
+            >
+          </div>
+          <div class="total">
+            total: {{ totalValue | currency
+            }}<span
+              [ngClass]="showtext ? 'per-person-visible' : 'per-person-hide'"
+              >per person</span
+            >
+          </div>
         </div>
       </form>
     </div>
