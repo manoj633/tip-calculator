@@ -37,17 +37,17 @@
 .circle-1 {
     height: 300px;
     width: 300px;
-    top: 100px;
-    left: -50px;
+    top: 60px;
+    left: -10px;
     opacity: 0.8;
     animation-timing-function: cubic-bezier(0.54, 0.085, 0.5, 0.92);
     animation-iteration-count: infinite;
     animation-name: float;
     -webkit-animation-name: float;
-    animation-duration: 6s;
-    -webkit-animation-duration: 6s;
-    -webkit-animation-delay: 3.5s;
-    animation-delay: 3.5s;
+    animation-duration: 4s;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
     animation-direction: alternate;
 }
 
@@ -113,7 +113,7 @@
 .card {
     position: absolute;
     height: 30vh;
-    width: 70vw;
+    width: 50vw;
 
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.1);
@@ -248,4 +248,19 @@ input:hover {
 
 .per-person-hide {
     display: none;
+}
+
+@media (max-width: 480px) {
+    .view-port {
+        width: 100vw;
+    }
+
+    .title {
+        left: 5%;
+        font-size: 1.5rem;
+    }
+
+    .inputs-container {
+        left: 15%;
+    }
 }

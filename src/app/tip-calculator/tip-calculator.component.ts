@@ -25,7 +25,7 @@ export class TipCalculatorComponent {
           this.totalValue = this.bill + this.tipTotal;
         } else {
           this.tipTotal = (this.bill * (this.tip / 100)) / this.peopleCount;
-          this.totalValue = (this.bill + this.tipTotal) / this.peopleCount;
+          this.totalValue = (this.bill + (this.tipTotal * this.peopleCount)) / this.peopleCount;
           this.showtext = true;
         }
       }
