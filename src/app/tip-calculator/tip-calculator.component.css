@@ -242,6 +242,7 @@ input:hover {
 @media (max-width: 480px) {
     .view-port {
         width: 100vw;
+        height: 45vw;
     }
 
     .title {
