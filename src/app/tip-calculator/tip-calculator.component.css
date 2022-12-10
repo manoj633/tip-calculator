@@ -266,5 +266,7 @@ input:hover {
         display: flex;
         font-size: 20px;
         flex-direction: column;
+
+        position: relative;
     }
 }
