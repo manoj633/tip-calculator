@@ -20,7 +20,6 @@
               (ngModelChange)="onChange('bill')"
               required
             />
-            <span class="underline"></span>
           </div>
           <div class="tip-container">
             <label>Tip %: </label>
@@ -33,7 +32,6 @@
               [(ngModel)]="tip"
               (ngModelChange)="onChange('tip')"
             />
-            <span class="underline"></span>
           </div>
           <div class="person-container">
             <label>Person: </label>
@@ -58,7 +56,7 @@
             >
           </div>
           <div class="total">
-            total: {{ totalValue | currency
+            Total: {{ totalValue | currency
             }}<span
               [ngClass]="showtext ? 'per-person-visible' : 'per-person-hide'"
               >per person</span

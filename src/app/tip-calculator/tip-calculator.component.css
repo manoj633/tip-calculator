@@ -221,26 +221,15 @@ input:hover {
 }
 
 .underline {
-    transition: all 0.3s;
     display: inline-block;
     bottom: 0;
     position: absolute;
     width: 100%;
-    height: 2px;
+    height: 0.5px;
     background-color: #ffffff;
+    margin-top: 5px;
 }
 
-.bill-container>input[id="bill"]:hover+.underline,
-.tip-container>input[id="tip"]:hover+.underline,
-.person-container>input[id="person"]:hover+.underline {
-    left: 0;
-}
-
-.bill-container>input[id="bill"]:focus+.underline,
-.tip-container>input[id="tip"]:focus+.underline,
-.person-container>input[id="person"]:focus+.underline {
-    left: 0;
-}
 
 .per-person-visible {
     font-size: 15px;
@@ -262,5 +251,20 @@ input:hover {
 
     .inputs-container {
         left: 15%;
+    }
+
+    .underline {
+        left: -29px;
+    }
+
+    .outputs-container {
+        flex-direction: column;
+    }
+
+    .tips,
+    .total {
+        display: flex;
+        font-size: 20px;
+        flex-direction: column;
     }
 }
