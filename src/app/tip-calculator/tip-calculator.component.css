@@ -284,4 +284,18 @@ input:hover {
     label {
         font-size: 15px;
     }
+
+    .circle-1 {
+        width: 100px;
+        height: 100px;
+        top: 146px;
+        left: 132px;
+    }
+
+    .circle-2 {
+        width: 100px;
+        height: 100px;
+        top: -103px;
+        left: 335px;
+    }
 }
