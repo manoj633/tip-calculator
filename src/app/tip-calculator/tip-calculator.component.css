@@ -251,6 +251,7 @@ input:hover {
     .title {
         left: 5%;
         font-size: 1.2rem;
+        text-align: center;
     }
 
     .inputs-container {
@@ -264,7 +265,7 @@ input:hover {
 
     .underline {
         left: -29px;
-        top: 117px
+        top: 117px;
     }
 
     .outputs-container {
@@ -296,6 +297,6 @@ input:hover {
         width: 100px;
         height: 100px;
         top: -103px;
-        left: 335px;
+        left: 365px;
     }
 }
