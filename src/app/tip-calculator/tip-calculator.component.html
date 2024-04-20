@@ -16,6 +16,7 @@
               id="bill"
               name="bill"
               min="0"
+              max="100000"
               [(ngModel)]="bill"
               (ngModelChange)="onChange('bill')"
               required
@@ -29,6 +30,7 @@
               name="tip"
               id="tip"
               min="0"
+              max="500"
               [(ngModel)]="tip"
               (ngModelChange)="onChange('tip')"
             />
@@ -41,6 +43,7 @@
               name="peopleCount"
               min="1"
               id="person"
+              max="20"
               [(ngModel)]="peopleCount"
               (ngModelChange)="onChange('people')"
             />
